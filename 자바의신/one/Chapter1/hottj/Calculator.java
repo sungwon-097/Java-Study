@@ -1,4 +1,4 @@
-package one.Chapter1;
+package one.Chapter1.hottj;
 
 public class Calculator{
 

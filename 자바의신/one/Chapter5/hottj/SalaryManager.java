@@ -1,4 +1,4 @@
-package one.Chapter5;
+package one.Chapter5.hottj;
 
 public class SalaryManager{
     

@@ -4,39 +4,39 @@
 
 1. 배열을 선언 할 때 어떤 키워드를 타입 앞이나 뒤에 사용해야 하나요?
 
-    자료형 뒤에 []
+        자료형 뒤에 []
 
 2. 배열의 첫번째 위치는 0인가요? 1인가요?
 
-    배열 Array는 Array[0]부터 Array[Array.length-1]까지 사용
+        배열 Array는 Array[0]부터 Array[Array.length-1]까지 사용
 
 3. 배열을 선언 할 때 boolean 배열의 크기만 지정했다면 boolean 배열의 [0]위치에 있는 값은 무엇인가요?
 
-    0
+        0
 
 4. ArrayIndexOutOfBoundException이라는 것은 언제 발생하나요?
 
-    배열에 잘못된 index를 할당하거나 참조 할 때
+        배열에 잘못된 index를 할당하거나 참조 할 때
 
 5. 중괄호를 이용하여 배열을 초기화할 때 중괄호 끝에 반드시 어떤 것을 입력해주어야 하나요?
 
-    ;
+        ;
 
 6. 2차원 배열을 정의할 때에는 대괄호를 몇 개 지정해야 하나요?
 
-    2차원 배열이므로 2개
+        2차원 배열이므로 2개
 
 7. 배열을 쉽게 처리해주는 for문의 문법은 어떻게 될까요?
 
-    for문의 초기화 값에 배열의 인자를 할당하여 접근함
+        for문의 초기화 값에 배열의 인자를 할당하여 접근함
 
-    for(int idx=0; idx<Array.lenth; idx++)
+        for(int idx=0; idx<Array.lenth; idx++)
         System.out.println(Array[idx]);
 
 8. 자바 프로그램에 데이터를 전달해 주려면 클래스 이름 뒤에 어떻게 구분하여 나열하면 되나요?
 
-    {}
+        {}
 
 9. 자바 프로그램이 시작 할 때 전달 받는 내용은 어떤 타입의 배열인가요?
 
-    String Type
+        String Type

@@ -18,4 +18,14 @@ public class Student {
     public String toString(){
         return name+" "+address+" "+phone+" "+email;
     }
+    @Override
+    public boolean equals(Object obj){
+        Student param=(Student) obj;
+        if(param.name!=this.name) return false;
+        if(param.address!=this.address) return false;
+        if(param.phone!=this.phone) return false;
+        if(param.email!=this.email) return false;
+        
+        return true;
+    }
 }

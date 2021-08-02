@@ -1,4 +1,4 @@
-package one.Chapter12.sungwon.c.impl.list;
+package c.impl.list;
 
 public abstract class AbstractList{
     public abstract void add();

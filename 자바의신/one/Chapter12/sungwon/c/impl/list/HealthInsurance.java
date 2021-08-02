@@ -1,4 +1,4 @@
-package one.Chapter12.sungwon.c.impl.list;
+package c.impl.list;
 
 public enum HealthInsurance {
     LEVEL_ONE(1000, 1.0),

@@ -1,4 +1,4 @@
-package c.impl.list;
+package one.Chapter12.sungwon.c.impl.list;
 
 public interface List{
     public void add();

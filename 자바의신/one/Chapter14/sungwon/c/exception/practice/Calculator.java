@@ -1,4 +1,4 @@
-package c.exception.practice;
+package one.Chapter14.sungwon.c.exception.practice;
 
 public class Calculator {
     public static void main(String[] args){

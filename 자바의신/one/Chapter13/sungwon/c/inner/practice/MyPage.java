@@ -1,4 +1,4 @@
-package c.inner.practice;
+package one.Chapter13.sungwon.c.inner.practice;
 
 public class MyPage {
     InputBox input;

@@ -1,4 +1,4 @@
-package one.Chapter12.sungwon;
+package one.Chapter12.sungwon.c.impl.list;
 
 public enum HealthInsurance {
     LEVEL_ONE(1000, 1.0),
@@ -10,13 +10,16 @@ public enum HealthInsurance {
 
     private final int maxSalary;
     private final double ratio;
+    
     HealthInsurance(int maxSalary, double ratio){
         this.maxSalary=maxSalary;
         this.ratio=ratio;
     }
+
     public double getRatio(){
         return ratio;
     }
+    
     public static HealthInsurance getHealthInsurance(int salary){
         if(salary<1000)
             return LEVEL_ONE;

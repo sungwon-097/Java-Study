@@ -1,4 +1,4 @@
-package one.Chapter3;
+package one.Chapter3.hottj;
 
 public class Profile {
     String name;

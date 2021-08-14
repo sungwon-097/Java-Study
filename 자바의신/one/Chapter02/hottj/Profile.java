@@ -1,4 +1,4 @@
-package one.Chapter2;
+package one.Chapter2.hottj;
 
 public class Profile {
     public static void main(String[] args){

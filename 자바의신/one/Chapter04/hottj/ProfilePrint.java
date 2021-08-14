@@ -1,4 +1,4 @@
-package one.Chapter4;
+package one.Chapter4.hottj;
 
 public class ProfilePrint {
     int age;

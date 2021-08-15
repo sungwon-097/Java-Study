@@ -74,10 +74,10 @@ void setScore(int score){
 - 유지보수를 생각하여 가장 인수가 많은 생성자에 필요한 처리를 기술하고, 인수가 적은 생성자에서는 this를 사용하여 별도의 생성자를 호출하는 식이 좋다
 
 ## 애노테이션
-- @Deprecated
+- `@Deprecated`
     - 메서드의 사용을 비추천임을 나타내기 위함
-- @SuppressWarnings 
-     -경고를 출력하지 않음 (사용 권장 X)
+- `@SuppressWarnings`
+    - 경고를 출력하지 않음 (사용 권장 X)
     
 ## 명명 규칙
 - 클래스와 변수: 카멜 케이스

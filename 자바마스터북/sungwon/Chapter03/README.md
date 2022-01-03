@@ -45,3 +45,25 @@ System.out.println("Integer : { SIZE(bit) : }" + Integer.SIZE
 Byte : {SIZE(bit) : 8, BYTES : 1, MIN : -128, MAX : 127}
 Integer : {SIZE(bit) : 32, BYTES : 4 MIN : -2147483648, MAX : 2147483647}
 ```
+
+## 3-2 클래스 작성하기
+
+1. 패키지 : 클래스를 계층적으로 이용하기 위해 사용
+```java
+package 자바마스터북/Chapter03
+
+```
+
+2. 접근제한자 : 인스턴스를 사용 할 수 있는 범위를 정의
+
+- 필드, 메서드 : public / private / (non) : package private / protected
+
+- static : 클래스 멤버로 지정 / final : 변경 없음
+
+3. 계승 : extend한 자식 클래스에서 부모클래스의 메소드 사용 가능
+
+4. 추상클래스 : 계승될 것을 전제로 처리의 일부분을 자식 클래스에서 수행 하도록 동작
+
+5. 인터페이스 : 확장성을 높이기 위해 객체의 동작만을 규정
+
+6. 익명클래스 : 특정한 한 곳에서만 클래스를 사용 할 때 유리

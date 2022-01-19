@@ -4,7 +4,7 @@
 
 ### 1-1. Date
 ```java
-Date now = new Date(); // 현재 시각으로 클래스 생성
+Date now = new Date(); // 현재 시각으로 생성
 System.out.println(now);
 
 Date date = new Date(5000); // 1970년1월1일부터 5,000ms경과한 시간
@@ -18,7 +18,7 @@ System.out.println(date);
 
 ```java
 Calendar calendar = Calendar.getInstance();
-System.out.println(calendar.getTime);
+System.out.println(calendar.getTime());
 
 calendar.set(Calendar.MINUTE, 18);
 calendar.set(2022, 1, 16, 23, 27, 0);
@@ -42,18 +42,18 @@ calendar.add(Calendar.YEAR, -3);
 |일|Calendar.DAY_OF_MONTH|시|Calendar.HOUR|
 |분|Calendar.MINUTE|초|Calendar.SECOND|
 
-* * 클래스의 월은 0-11까지의 값으로 관리하고 있기 때문에 헷갈릴 수 있어 캘린더상수 이용을 권장함( 0 -> 1월)
+* * 클래스의 월은 0-11까지의 값으로 관리하고 있기 때문에 헷갈릴 수 있어 캘린더상수 이용을 권장함( 0 -> 1월 )
 
 > 캘린더 상수
 
-|상수|월|상수|월|
-|-|-|-|-|
-|Calendar.JANUARY|1월|Calendar.FEBRUARY|2월|
-|Calendar.MARCH|3월|Calendar.APRIL|4월|
-|Calendar.MAY|5월|Calendar.JUNE|6월|
-|Calendar.JULY|7월|Calendar.AUGUST|8월|
-|Calendar.SEPTEMBER|9월|Calendar.OCTOBER|10월|
-|Calendar.NOVEMBER|11월|Calendar.DECEMBER|12월|
+|상수|월|값|상수|월|값|
+|-|-|-|-|-|-|
+|Calendar.JANUARY|1월|0|Calendar.FEBRUARY|2월|6|
+|Calendar.MARCH|3월|1|Calendar.APRIL|4월|7|
+|Calendar.MAY|5월|2|Calendar.JUNE|6월|8|
+|Calendar.JULY|7월|3|Calendar.AUGUST|8월|9|
+|Calendar.SEPTEMBER|9월|4|Calendar.OCTOBER|10월|10|
+|Calendar.NOVEMBER|11월|5|Calendar.DECEMBER|12월|11|
 
 ```java
 set(int year, int month, int date);
@@ -93,11 +93,11 @@ calendar.setTime(date);
 
 - 날짜, 시간, 일시를 각각 다른 클래스로 처리해 필요에 따라 나누어 사용 할 수 있음(불필요한 정보의 보유 X)
 
-    - 날짜 : java.time.localDate    (2022-01-17)
+    - 날짜 : java.time.LocalDate    (2022-01-17)
 
-    - 시간 : java.time.localTime    (00:27:12.153)
+    - 시간 : java.time.LocalTime    (00:27:12.153)
 
-    - 일시 : java.time.localDateTime    (2022-01-17T00:27:12.153)
+    - 일시 : java.time.LocalDateTime    (2022-01-17T00:27:12.153)
 
 - 연, 월, 일을 지정하여 인스턴스를 생성 할 수 있음
 
@@ -123,20 +123,20 @@ calendar.setTime(date);
 ||of(int year, Month month, int dayOfMonth, int hour, int minute, int second)|
 ||of(int year, Month month, int dayOfMonth, int hour, int minute, int second, int nanoOfSecond)|
 
-> Calendar 클래스에서는 0~11까지의 값을 할당하였지만 Month 클래스는 1~12까지의 값을 할당함
+> Calendar 클래스에서는 0-11까지의 값을 할당하였지만 Month 클래스는 1-12까지의 값을 할당함
 
 - 연, 월, 일의 필드값을 개별적으로 취득 할 수 있음
 
-|클래스|메서드|||클래스|메서드||
-|-|-|-|-|-|-|-|
-|LocalDate|getYear|||LocalDateTime|getYear|
-||getMonth|Month클래스의 월을 반환|||getMonth|Month클래스의 월을 반환|
-||getMonthValue|1~12까지의 월을 반환|||getMonthValue|1~12까지의 월을 반환|
-||getDayOfMonth||||getDayOfMonth|
-|LocalTime|getHour||||getHour|
-||getMinute||||getMinute|
-||getSecond||||getSecond|
-||getNano||||getNano|
+|클래스|메서드|클래스|메서드|
+|-|-|-|-|
+|LocalDate|getYear|LocalDateTime|getYear|
+||getMonth|Month클래스의 월을 반환|getMonth|Month클래스의 월을 반환|
+||getMonthValue|1~12까지의 월을 반환|getMonthValue|1~12까지의 월을 반환|
+||getDayOfMonth||getDayOfMonth|
+|LocalTime|getHour||getHour|
+||getMinute||getMinute|
+||getSecond||getSecond|
+||getNano||getNano|
 
 - 연, 월, 일의 계산이 가능
 
@@ -222,7 +222,7 @@ try{
 
         - >재사용은 최대한 지양
 
-### 3-4. Date ans Time API로 날짜/시간 클래스와 문자열 상호 교환하기
+### 3-4. Date and Time API로 날짜/시간 클래스와 문자열 상호 교환하기
 
 1. 날짜/시간 클래스를 임의의 형식으로 문자열 출력하기
 

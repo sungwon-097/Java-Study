@@ -1,8 +1,8 @@
-# 2. 기본적인 작성법 익히기
+2. 기본적인 작성법 익히기
 
-## 2-1 표기법
+# 2. 표기법
 
-1. 문장과 블록
+## 1. 문장과 블록
 ```java
 public class HelloWorld{
     public static void main(String... args){
@@ -12,14 +12,14 @@ public class HelloWorld{
 /* Comment*/
 ```
 
-2. 변수, 리터럴
+## 2. 변수, 리터럴
 ```java
 int i;
 boolean flag;
 String S;
 ```
 
-3. 연산자
+## 3. 연산자
 
 |종류|기호|의미|
 |-|-|-|
@@ -27,7 +27,7 @@ String S;
 |비트연산자|<<|산술연산 (unsigned)|
 |비트연산자|<<|논리연산 (signed)|
 
-4. 제어 구문
+## 4. 제어 구문
 
 ```java
 switch(flag){
@@ -39,7 +39,7 @@ switch(flag){
 }
 ```
 
-5. 반복문
+## 5. 반복문
 ```java
 // for
     for(int i=0; i<len ;i++){}
@@ -51,9 +51,9 @@ switch(flag){
     do{}while(flag);
 ```
 
-## 2-2 클래스와 매서드
+# 2. 클래스와 매서드
 
-1. Class
+## 1. Class
 
 > 변수나 메서드를 모아둔 틀 또는 그릇
 ```java
@@ -65,7 +65,7 @@ class student{
 }
 ```
 
-2. Method
+## 2. Method
 > 처리를 기술하는 블록, 결과값을 호출자에 반환 가능
 ```java
 void printScore(int score){
@@ -73,7 +73,7 @@ void printScore(int score){
 }
 ```
 
-3. 수식자
+## 3. 수식자
 > 클래스나 메서드, 필드 등에 효과나 제약을 부여하는 수단
 
 |수식자|설명|
@@ -88,7 +88,7 @@ void printScore(int score){
 |native|자바 이외의 네이티브한 코드를 호출한다는 것을 지정|
 |strictfp|부동소수점수 IEEE754|
 
-4. 오버로딩
+## 4. 오버로딩
 > 인수의 타입이나 인수의 수가 다르다면 동일 명칭으로 지정 가능
 ```java
 public class Overloading{

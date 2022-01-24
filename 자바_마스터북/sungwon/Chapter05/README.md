@@ -1,6 +1,8 @@
-# 5. 스트림처리
+5. 스트림처리
 
-## 1-1. Stream API
+# 1. Stream API
+
+## 1-1. Stream API 작성
 
 1. 작성 : Stream 인스턴스를 생성
 2. 중간

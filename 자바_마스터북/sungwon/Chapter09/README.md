@@ -1,8 +1,8 @@
-# 9. 날짜 처리 공략하기
+9. 날짜 처리 공략하기
 
-## 1. Date와 Calendar 구분하여 사용하기
+# 1. Date와 Calendar 구분하여 사용하기
 
-### 1-1. Date
+## 1-1. Date
 ```java
 Date now = new Date(); // 현재 시각으로 생성
 System.out.println(now);
@@ -14,7 +14,7 @@ System.out.println(date);
 - Date 클래스의 인스턴스에 ms단위의 시간을 인수로 넣어줌
 - 연, 월, 일, 시, 분등의 생성자가 존재하지만 deprecated
 
-### 1-2. Calendar
+## 1-2. Calendar
 
 ```java
 Calendar calendar = Calendar.getInstance();
@@ -60,7 +60,7 @@ set(int year, int month, int date);
 set(int year, int month, int date, int hourOfDay, int minute); // 이외의 값은 이전 필드의 값을 유지
 ```
 
-### 1-3. Date 클래스와 Calendar 클래스의 상호 교환
+## 1-3. Date 클래스와 Calendar 클래스의 상호 교환
 
 1. Calendar 클래스의 메서드 이용하기
 - - getTime 메서드는 캘린더 인스턴스가 보관한 시간을 Date 클래스의 인스턴스로 반환한다
@@ -87,9 +87,9 @@ Calendar calendar = Calendar.getInstance();
 calendar.setTime(date);
 ```
 
-## 2.Date and Time API 사용하기
+# 2.Date and Time API 사용하기
 
-### 2-1. Date and Time API의 장점
+## 2-1. Date and Time API의 장점
 
 - 날짜, 시간, 일시를 각각 다른 클래스로 처리해 필요에 따라 나누어 사용 할 수 있음(불필요한 정보의 보유 X)
 
@@ -172,9 +172,9 @@ System.out.println(dateTime.minusSeconds(20));
 
 - >불변 객체이다.
 
-## 3. 날짜 클래스의 문자열 상호 교환하기
+# 3. 날짜 클래스의 문자열 상호 교환하기
 
-### 3-1. 날짜 클래스를 임의의 형식으로 문자열 출력하기
+## 3-1. 날짜 클래스를 임의의 형식으로 문자열 출력하기
 
 - SimpleDataFormat클래스의 format메서드로 출력 형식을 문자열로 변환 가능
 
@@ -197,7 +197,7 @@ System.out.println(format.format(date));
 |K|오전/오후의 대한 시간(0~11)|h|오전/오후의 대한 시간(1~12)|m|분|s|초|
 |S|밀리초|z|타임 존|Z|타임 존(4행의 숫자)|
 
-### 3-2. 문자열로 표현된 날짜를 Date 클래스로 변환하기
+## 3-2. 문자열로 표현된 날짜를 Date 클래스로 변환하기
 
 - 2-1)과 같이 parse 메서드를 이용하여 지정 가능
 
@@ -210,7 +210,7 @@ try{
 }// 지정한 문자열이 패턴과 일치하지 않는 경우 파싱에러가 발생한다.
 ```
 
-### 3-3. SimpleDateFormat 클래스는 스레드 세이프가 아니다
+## 3-3. SimpleDateFormat 클래스는 스레드 세이프가 아니다
 
 - Tread-Safe란 여러 스레드로부터 동시에 접근이 이루어졌을 때 실행에 문제가 없는 상태를 의미
 
@@ -222,7 +222,7 @@ try{
 
         - >재사용은 최대한 지양
 
-### 3-4. Date and Time API로 날짜/시간 클래스와 문자열 상호 교환하기
+## 3-4. Date and Time API로 날짜/시간 클래스와 문자열 상호 교환하기
 
 1. 날짜/시간 클래스를 임의의 형식으로 문자열 출력하기
 

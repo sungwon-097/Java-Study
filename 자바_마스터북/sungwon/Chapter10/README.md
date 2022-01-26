@@ -64,8 +64,6 @@ public class CallByReferenceSample{
 
 ## 1-2. 조작하면 값이 변경되는 변경 가능 클래스
 
-1. 
-
 ```java
 String text1 = "This is an Apple.";
 String text2 = text1.replace("apple", "orange");

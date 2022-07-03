@@ -2,26 +2,23 @@
 
 ##    1장. 프로그래밍이란 무엇인가?
 
-1. 클래스가 뭔가요?
+```java
+public class DoorLockManager{ // class
+    
+    private password; // state
+    
+    public boolean checkPassword(String password){ // method => behavior
+        return this.password == password ? True : False;
+    }
+    public void setPassword(String password){
+        this.password = password
+    }
+    public void resetPassword(){
+        this.password = '1234';
+    }
+}
 
-        상태와 행위를 갖는 자바의 기본 단위. 상태는 클래스변수/인스턴스 변수, 행위는 메소드로 표현 할 수 있다.
-
-2. 메소드가 뭔가요?
-
-        자바 클래스 내부에서 정의 된 함수.
-
-3. 메소드의 매개 변수는 어디에 적어주나요?
-
-        메소드 이름 뒤 소괄호 안에 적어준다.
-
-4. 메소드 이름 앞에 꼭 적어 줘야 하는 건 뭐죠?
-
-        메소드의 반환 자료형을 적어준다.
-
-5. 클래스가 갖고 있어야 하는 두 가지가 뭐죠?
-
-        상태와 행위. 클래스는 상태와 행위를 갖는 자바의 기본 단위를 뜻한다.
-
-6. 메소드에서 결과를 돌려주려면 어떤 예약어를 사용해야 할까요?
-
-        eturn()
+```
+1. 자바의 가장 작은 단위는 클래스이다.
+2. 메소드는 클래스 안에 포함되어야 한다.
+3. 클래스는 상태(state)와 행동(behavior)을 가지고 있어야 한다.

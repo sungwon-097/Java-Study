@@ -16,7 +16,7 @@ public class DoorLockManager{ // class
     public void resetPassword(){
         this.password = '1234';
     }
-};
+}
 
 ```
 1. 자바의 가장 작은 단위는 클래스이다.

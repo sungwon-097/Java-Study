@@ -1,14 +1,17 @@
 ## 정리해봅시다
 
 1. main() 메소드의 메소드 이름 앞에는 어떤 예약어들이 들어 가나요?
-
-        접근제어자인 public static
-
+```java
+// 접근제어자인 public static
+public class mainController{
+    public static void main(String[] args)
+}
+```
 2. main() 메소드의 매개 변수에는 어떤 값이 들어가나요?
 
         (String[] args) main method는 외부로부터 값을 가져올 수가 있어야 해서 메모리 내의 공간을 미리 선언하는 것이다.
 
-3. 만약 어떤분들이 만든 클래스에는 main() 메소드가 없다는, java 명령어로 그 클래스를 수행 할 수 있나요?
+3. 만약 어떤분들이 만든 클래스에는 main() 메소드가 없다면, java 명령어로 그 클래스를 수행 할 수 있나요?
 
         main method가 존재해야 실행이 가능하다.
 

@@ -97,6 +97,7 @@ public class ResourceLocker implements Runnable{
 // Dead Lock : 둘 이상의 프로세스가 다른 프로세스가 점유하고 있는 자원을 서로 기다릴 때 무한 대기에 빠지는 상태
 // (circular wait, non-preemtive, mutual exclution, hold and wait)
 // 서로의 스레드가 list의 잠금을 해제하기를 기다리는 상태가 된다.
+// 참고 : https://github.com/remzi-arpacidusseau/ostep-translations/tree/master/korean
 ```
 
 3. Exception 발생
